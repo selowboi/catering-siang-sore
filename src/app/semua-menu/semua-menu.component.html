@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item {{ banner.active === true ? 'active' : '' }}" *ngFor="let banner of banners">
+        <img [src]="banner.link" class="w-100 img-fluid" style="height: 500px; object-fit: contain;" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container" style="min-height: 1000px;">
+    <div class="row my-3">
+      <div class="col-md-3">
+        <h5>Semua Menu</h5>
+        <div class="row flex-column">
+          <div class="col-md-12 mb-1" *ngFor="let category of categories">
+            <div class="card">
+              <div class="card-body">
+                <span><i class="fas fa-cart-shopping"></i>&nbsp;{{ category.category_name }} ({{ category.count }})</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <h4>Tumpeng dan Hantaran</h4>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="input-group mb-1">
+              <button class="input-group-text fas fa-bars bg-transparent border-0 border-bottom border-dark rounded-0" id="basic-addon1"></button>
+              <input type="text" class="form-control border-0 border-bottom border-dark rounded-0" aria-describedby="basic-addon1">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+          <div class="col-md-12">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <ng-container *ngFor="let menu of menus">
+                <div class="col">
+                  <div class="card">
+                    <img src="../../assets/dummy.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ menu.menu_name }}</h5>
+                      <p class="card-text">Rp {{ menu.price | number }}</p>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

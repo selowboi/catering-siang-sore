@@ -1,0 +1,173 @@
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item {{ banner.active === true ? 'active' : '' }}" *ngFor="let banner of banners">
+      <img [src]="banner.link" class="w-100 img-fluid" style="height: 500px; object-fit: contain;" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container-fluid p-md-3 mt-3">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3>Semua Menu</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <img src="../assets/dummy.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Ayam Goreng Sambal Ijo</h5>
+                      <p class="card-text">ayam goreng tepung dengan sambal ijo yang gurih</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../assets/dummy.png" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Ayam Goreng Sambal Ijo</h5>
+                      <p class="card-text">ayam goreng tepung dengan sambal ijo yang gurih</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../assets/dummy.png" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Ayam Goreng Sambal Ijo</h5>
+                      <p class="card-text">ayam goreng tepung dengan sambal ijo yang gurih</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../assets/dummy.png" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Ayam Goreng Sambal Ijo</h5>
+                      <p class="card-text">ayam goreng tepung dengan sambal ijo yang gurih</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-danger text-light my-3 p-md-3">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3>Bagaimana Cara Order ?</h3>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3">
+        <div class="card border-0">
+          <div class="card-body bg-danger">
+            <img src="../../assets/search.png"  height="200" width="200" alt="">
+            <h5 class="card-title">Cari Produk</h5>
+            <p class="card-text">Pilih menu makanan sesuai dengan selera anda</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0">
+          <div class="card-body bg-danger">
+            <img src="../../assets/click.png"  height="200" width="200" alt="">
+            <h5 class="card-title">Klik Icon Whatsapp</h5>
+            <p class="card-text">Chat admin whatsapp dan order makanan favoritmu</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0">
+          <div class="card-body bg-danger">
+            <img src="../../assets/payment.png"  height="200" width="200" alt="">
+            <h5 class="card-title">Pembayaran</h5>
+            <p class="card-text">Pilih metode pembayaranmu dan lakukan pembayaran</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0">
+          <div class="card-body bg-danger">
+            <img src="../../assets/delivery.png"  height="200" width="200" alt="">
+            <h5 class="card-title">Pengiriman</h5>
+            <p class="card-text">Kami akan menyiapkan makanan anda untuk pengiriman</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid p-md-3 mb-3">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3>Halaman Instagram</h3>
+      <div class="p-md-3">
+        <h5>Masih belum yakin ?</h5>
+        <h5>Yuk follow instagram <a href="https://www.instagram.com/catering_siangsore/" class="text-decoration-none text-dark">@catering_siangsore</a></h5>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="card-group">
+      <div class="card">
+        <img src="../../assets/dummy.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card">
+        <img src="../../assets/dummy.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card">
+        <img src="../../assets/dummy.png" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <img src="../../assets/dummy.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card">
+        <img src="../../assets/dummy.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card">
+        <img src="../../assets/dummy.png" class="card-img-top" alt="...">
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <img src="../../assets/dummy.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card">
+        <img src="../../assets/dummy.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card">
+        <img src="../../assets/dummy.png" class="card-img-top" alt="...">
+      </div>
+    </div>
+  </div>
+</div>

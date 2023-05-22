@@ -1,0 +1,10 @@
+#whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#whatsapp-container img {
+  width: 100px;
+  height: 100px;
+}
