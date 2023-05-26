@@ -11,11 +11,11 @@ export class SemuaMenuComponent implements OnInit{
   banners = [
     {
       active: true,
-      link: '../assets/banner.jpeg',
+      link: 'assets/banner.jpeg',
     },
     {
       active: false,
-      link: '../assets/banner.jpeg',
+      link: 'assets/banner.jpeg',
     }
   ]
 

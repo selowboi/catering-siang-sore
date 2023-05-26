@@ -24,37 +24,37 @@ export class BerandaComponent implements OnInit{
       menu_id: 1,
       menu_name: 'Ayam Goreng Sambal Ijo 1',
       menu_description: 'ayam goreng tepung dengan sambal ijo yang gurih',
-      menu_image: '../assets/dummy.png',
+      menu_image: 'assets/dummy.png',
     },
     {
       menu_id: 2,
       menu_name: 'Ayam Goreng Sambal Ijo 2',
       menu_description: 'ayam goreng tepung dengan sambal ijo yang gurih',
-      menu_image: '../assets/dummy.png',
+      menu_image: 'assets/dummy.png',
     },
     {
       menu_id: 3,
       menu_name: 'Ayam Goreng Sambal Ijo 3',
       menu_description: 'ayam goreng tepung dengan sambal ijo yang gurih',
-      menu_image: '../assets/dummy.png',
+      menu_image: 'assets/dummy.png',
     },
     {
       menu_id: 4,
       menu_name: 'Ayam Goreng Sambal Ijo 4',
       menu_description: 'ayam goreng tepung dengan sambal ijo yang gurih',
-      menu_image: '../assets/dummy.png',
+      menu_image: 'assets/dummy.png',
     },
     {
       menu_id: 5,
       menu_name: 'Ayam Goreng Sambal Ijo 5',
       menu_description: 'ayam goreng tepung dengan sambal ijo yang gurih',
-      menu_image: '../assets/dummy.png',
+      menu_image: 'assets/dummy.png',
     },
     {
       menu_id: 6,
       menu_name: 'Ayam Goreng Sambal Ijo 6',
       menu_description: 'ayam goreng tepung dengan sambal ijo yang gurih',
-      menu_image: '../assets/dummy.png',
+      menu_image: 'assets/dummy.png',
     },
   ];
 
