@@ -1,4 +1,4 @@
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide bg-danger p-md-3" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item {{ banner.active === true ? 'active' : '' }}" *ngFor="let banner of banners">
       <img [src]="banner.link" class="w-100 img-fluid" style="height: 500px; object-fit: contain;" alt="...">
@@ -13,52 +13,25 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<div class="container-fluid p-md-3 mt-3">
+<div class="container-fluid p-md-5">
   <div class="row">
     <div class="col-md-12 text-center">
       <h3>Semua Menu</h3>
     </div>
   </div>
-  <div class="row">
+  <div class="row mt-5">
     <div class="col-md-12">
       <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
               <div class="row">
-                <div class="col">
+                <div class="col" *ngFor="let display of displays">
                   <div class="card">
-                    <img src="../assets/dummy.png" class="card-img-top" alt="Image 1">
+                    <img [src]="display.menu_image" class="card-img-top" [alt]="display.menu_name">
                     <div class="card-body">
-                      <h5 class="card-title">Ayam Goreng Sambal Ijo</h5>
-                      <p class="card-text">ayam goreng tepung dengan sambal ijo yang gurih</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="../assets/dummy.png" class="card-img-top" alt="Image 2">
-                    <div class="card-body">
-                      <h5 class="card-title">Ayam Goreng Sambal Ijo</h5>
-                      <p class="card-text">ayam goreng tepung dengan sambal ijo yang gurih</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="../assets/dummy.png" class="card-img-top" alt="Image 2">
-                    <div class="card-body">
-                      <h5 class="card-title">Ayam Goreng Sambal Ijo</h5>
-                      <p class="card-text">ayam goreng tepung dengan sambal ijo yang gurih</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="../assets/dummy.png" class="card-img-top" alt="Image 2">
-                    <div class="card-body">
-                      <h5 class="card-title">Ayam Goreng Sambal Ijo</h5>
-                      <p class="card-text">ayam goreng tepung dengan sambal ijo yang gurih</p>
+                      <h5 class="card-title">{{ display.menu_name }}</h5>
+                      <p class="card-text">{{ display.menu_description }}</p>
                     </div>
                   </div>
                 </div>
@@ -66,11 +39,15 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button
+          (click)="onClickPreviousDisplay()"
+          class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button
+          (click)="onClickNextDisplay()"
+          class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -78,7 +55,7 @@
     </div>
   </div>
 </div>
-<div class="container-fluid bg-danger text-light my-3 p-md-3">
+<div class="container-fluid bg-danger text-light p-md-5">
   <div class="row">
     <div class="col-md-12 text-center">
       <h3>Bagaimana Cara Order ?</h3>
@@ -89,7 +66,7 @@
       <div class="col-md-3">
         <div class="card border-0">
           <div class="card-body bg-danger">
-            <img src="../../assets/search.png"  height="200" width="200" alt="">
+            <img src="../../assets/search.png" class="card-image" alt="">
             <h5 class="card-title">Cari Produk</h5>
             <p class="card-text">Pilih menu makanan sesuai dengan selera anda</p>
           </div>
@@ -98,7 +75,7 @@
       <div class="col-md-3">
         <div class="card border-0">
           <div class="card-body bg-danger">
-            <img src="../../assets/click.png"  height="200" width="200" alt="">
+            <img src="../../assets/click.png"  class="card-image" alt="">
             <h5 class="card-title">Klik Icon Whatsapp</h5>
             <p class="card-text">Chat admin whatsapp dan order makanan favoritmu</p>
           </div>
@@ -107,7 +84,7 @@
       <div class="col-md-3">
         <div class="card border-0">
           <div class="card-body bg-danger">
-            <img src="../../assets/payment.png"  height="200" width="200" alt="">
+            <img src="../../assets/payment.png"  class="card-image" alt="">
             <h5 class="card-title">Pembayaran</h5>
             <p class="card-text">Pilih metode pembayaranmu dan lakukan pembayaran</p>
           </div>
@@ -116,7 +93,7 @@
       <div class="col-md-3">
         <div class="card border-0">
           <div class="card-body bg-danger">
-            <img src="../../assets/delivery.png"  height="200" width="200" alt="">
+            <img src="../../assets/delivery.png"  class="card-image" alt="">
             <h5 class="card-title">Pengiriman</h5>
             <p class="card-text">Kami akan menyiapkan makanan anda untuk pengiriman</p>
           </div>
@@ -125,17 +102,20 @@
     </div>
   </div>
 </div>
-<div class="container-fluid p-md-3 mb-3">
-  <div class="row">
+<div class="container-fluid p-md-5">
+  <div class="row my-3">
     <div class="col-md-12 text-center">
       <h3>Halaman Instagram</h3>
       <div class="p-md-3">
         <h5>Masih belum yakin ?</h5>
-        <h5>Yuk follow instagram <a href="https://www.instagram.com/catering_siangsore/" class="text-decoration-none text-dark">@catering_siangsore</a></h5>
+        <h5>Yuk follow instagram <span (click)="onClickInstagram()">@catering_siangsore</span></h5>
       </div>
     </div>
   </div>
-  <div class="container mt-3">
+<!--  <div class="text-center">-->
+<!--    <button class="my-3 btn btn-lg btn-outline-danger" (click)="onClickInstagram()">Jangan lupa follow Instagramnya!</button>-->
+<!--  </div>-->
+  <div class="container mt-5">
     <div class="card-group">
       <div class="card">
         <img src="../../assets/dummy.png" class="card-img-top" alt="...">
